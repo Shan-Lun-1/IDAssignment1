@@ -11,7 +11,7 @@
 
     <title>Coinbase</title>
 </head>
-<body>
+<body onload = "typeWelcome()">
     <nav>
         <a class = "coinbase" href = "index.html">Coinbase</a>
         
@@ -24,13 +24,14 @@
     <main>
         <!--Welcome Section-->
         <section class = "marble">
-            <p id = "title">Start Your Crypto Journey With Coinbase Today</p>
-            <p id = "sub">Buy, sell and exchange cryptocurrency easily and securely</p>
+            <!--<p id = "title">Start Your Crypto Journey With Coinbase Today</p>-->
+            <p id = "title"></p>
+            <p id = "sub"></p>
         </section>
 
         <!--Available Cryptocurrencies-->
         <section class = "crypto">
-            <p class = "topic">Available Cryptocurrencies</p>
+            <h2 class = "topic">Available Cryptocurrencies</h2>
 
             <section class = "flex-container">
                 <div class="flex-item">
@@ -75,7 +76,7 @@
 
         <!--About Coinbase-->
         <section>
-            <p class = "topic" id = "about-coinbase">About Coinbase</p>
+            <h2 class = "topic" id = "about-coinbase">About Coinbase</h2>
             <section class = "flex-container-row1">
             
                 <img src = "assets/home page/coinbase logo.png" alt = "Coinbase">
@@ -114,7 +115,7 @@
 
         <!--Our Mission-->
         <section>
-            <p class = "topic">Our Mission</p>
+            <h2 class = "topic">Our Mission</h2>
             <video autoplay loop muted id = "mission">
                 <source src = "assets/home page/our mission.mp4" type = "video/mp4">
             </video>
@@ -159,6 +160,7 @@
         </ul>
 
     </footer>
+    
     
 </body>
 </html>
