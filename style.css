@@ -124,6 +124,7 @@ nav {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
   padding-left: 2%;
 }
 
@@ -140,14 +141,15 @@ nav {
   margin-right: 2%;
   padding: 15px;
   box-shadow: 2px 2px 10px #ededed;
-  font-family: "Open Sans", sans-serif;
-  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  line-height: 1.5;
+  height: 9em;
 }
 
 .flex-item-row1 p {
   padding-right: 20px;
   padding-left: 20px;
-  flex: 1 1 auto;
 }
 
 /*For remaining*/
@@ -492,7 +494,7 @@ video {
   .flex-item-row1 {
     margin-right: 2%;
     font-size: 16px;
-    line-height: 1.5;
+    height: 10.5em;
   }
 
   .flex-item-row1 p {
