@@ -1,0 +1,821 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  background-color: white;
+  margin: 0px;
+}
+
+/*Navigation Bar*/
+
+nav {
+  font-family: "Open Sans", sans-serif;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.coinbase {
+  color: #226ee1;
+  font-size: 30px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.pages {
+  font-size: 18px;
+  font-weight: 400;
+  float: right;
+  padding-right: 5%;
+  padding-top: 6px;
+}
+
+/*index.html*/
+
+.topic {
+  font-size: 3vw;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 3em;
+}
+
+/*Welcome Section*/
+.marble {
+  background-image: url("../assets/home page/marble background.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#title {
+  color: #226ee1;
+  font-size: 3.5vw;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 3em;
+}
+
+#sub {
+  font-size: 2vw;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 20%;
+}
+
+/*Available Cryptocurrencies*/
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  padding-left: 3%;
+  margin-bottom: 3em;
+  margin-left: -10px;
+}
+
+.flex-item {
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin: 2%;
+  padding: 10px;
+  flex: 1 1 0%;
+  box-shadow: 3px 3px 10px #ededed;
+  flex: 0 0 27%;
+}
+
+.flex-item img {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 40%;
+}
+.flex-item p {
+  font-size: 1.25vw;
+  font-weight: 500;
+  padding-right: 10px;
+}
+
+.abbreviation {
+  color: grey;
+}
+
+.crypto {
+  text-align: center;
+  padding-bottom: 5em;
+}
+
+.crypto > a {
+  font-size: 1.25vw;
+}
+
+/*About Coinbase*/
+/*For Coinbase icon and brief description*/
+.flex-container-row1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2%;
+}
+
+.flex-container-row1 img {
+  padding-right: 10px;
+  border-radius: 30px;
+}
+
+.flex-item-row1 {
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-right: 2%;
+  padding: 15px;
+  box-shadow: 3px 3px 10px #ededed;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  line-height: 1.5;
+  height: 9em;
+}
+
+.flex-item-row1 p {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+/*For remaining*/
+.flex-container-1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 5em;
+}
+
+.flex-container-1 div {
+  text-align: center;
+  border-radius: 28px;
+  background-color: white;
+  margin: 1%;
+  padding: 30px;
+  box-shadow: 3px 3px 10px #ededed;
+  flex: 1 1 0%;
+}
+
+.data-info {
+  font-size: 14px;
+}
+
+.data {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+/*Our Mission*/
+video {
+  margin-top: 3em;
+  width: 100%;
+  height: 100%;
+}
+
+/*Footer*/
+.footer {
+  padding-top: 5%;
+  background-color: #f5f8ff;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10%;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer-sub {
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.footer li {
+  padding-top: 10px;
+}
+
+.footer li > a > img {
+  border-radius: 5px;
+  width: 50%;
+}
+
+/*Media queries*/
+
+@media only screen and (max-width: 480px) {
+  /*Navigation Bar*/
+  .coinbase {
+    font-size: 18px;
+  }
+
+  .pages {
+    padding-top: 2px;
+    font-size: 14px;
+  }
+
+  /*index.html*/
+  .topic {
+    padding-top: 1em;
+  }
+
+  /*Available Cryptocurrencies*/
+  .flex-item {
+    border-radius: 15px;
+    padding: 10px;
+    flex: 1 1 40%;
+  }
+
+  .flex-item img {
+    width: 40%;
+  }
+  .flex-item p {
+    font-size: 10px;
+    padding-right: 5px;
+  }
+
+  .crypto > a {
+    font-size: 12px;
+  }
+
+  /*About Coinbase*/
+  /*For Coinbase icon and brief description*/
+
+  .flex-container-row1 img {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+    max-height: 160px;
+  }
+
+  .flex-item-row1 {
+    margin-right: 2%;
+    font-size: 8px;
+  }
+
+  .flex-item-row1 p {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  /*For remaining*/
+  .flex-container-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    justify-content: space-around;
+    padding-left: 1%;
+    margin-bottom: 5em;
+  }
+
+  .flex-container-1 div {
+    text-align: center;
+    border-radius: 28px;
+    background-color: white;
+    margin: 1%;
+    padding: 20px;
+    box-shadow: 3px 3px 10px #ededed;
+    flex: 1 1 33%;
+    height: 5em;
+  }
+
+  .data-info {
+    font-size: 10px;
+  }
+
+  .data {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  /*Our Mission*/
+  video {
+    margin-top: 1em;
+  }
+
+  /*Footer*/
+  .footer {
+    flex-wrap: wrap;
+    font-size: 8px;
+    justify-content: flex-start;
+    padding-bottom: 15%;
+  }
+
+  .footer li > a > img {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /*Navigation Bar*/
+  .coinbase {
+    font-size: 18px;
+  }
+
+  .pages {
+    padding-top: 2px;
+    font-size: 14px;
+  }
+
+  /*index.html*/
+  .topic {
+    padding-top: 1em;
+  }
+
+  /*Available Cryptocurrencies*/
+  .flex-item {
+    border-radius: 15px;
+    padding: 10px;
+    flex: 1 1 40%;
+  }
+
+  .flex-item img {
+    width: 40%;
+  }
+  .flex-item p {
+    font-size: 14px;
+    padding-right: 5px;
+  }
+
+  .crypto > a {
+    font-size: 2vw;
+  }
+
+  /*About Coinbase*/
+  /*For Coinbase icon and brief description*/
+
+  .flex-container-row1 img {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+    max-height: 160px;
+  }
+
+  .flex-item-row1 {
+    margin-right: 2%;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .flex-item-row1 p {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  /*For remaining*/
+  .flex-container-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    justify-content: space-around;
+    padding-left: 1%;
+    margin-bottom: 5em;
+  }
+
+  .flex-container-1 div {
+    text-align: center;
+    border-radius: 28px;
+    background-color: white;
+    margin: 1%;
+    padding: 20px;
+    box-shadow: 3px 3px 10px #ededed;
+    flex: 0 0 33%;
+  }
+
+  .data-info {
+    font-size: 14px;
+  }
+
+  .data {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  /*Our Mission*/
+  video {
+    margin-top: 1em;
+  }
+
+  /*Footer*/
+  .footer {
+    flex-wrap: wrap;
+    font-size: 10px;
+    justify-content: flex-start;
+    padding-bottom: 15%;
+  }
+
+  .footer li > a > img {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /*Navigation Bar*/
+
+  .coinbase {
+    font-size: 24px;
+  }
+
+  .pages {
+    padding-top: 4px;
+    font-size: 16px;
+  }
+
+  /*Available Cryptocurrencies*/
+  .flex-item {
+    border-radius: 15px;
+    padding: 5px;
+  }
+
+  .flex-item img {
+    width: 40%;
+  }
+  .flex-item p {
+    font-size: 14px;
+    padding-right: 5px;
+  }
+
+  /*About Coinbase*/
+  /*For Coinbase icon and brief description*/
+
+  .flex-container-row1 img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    max-height: 200px;
+  }
+
+  .flex-item-row1 {
+    margin-right: 2%;
+    font-size: 16px;
+    height: 10.5em;
+  }
+
+  .flex-item-row1 p {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  /*For remaining*/
+  .data-info {
+    font-size: 10px;
+  }
+
+  .data {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  /*Our Mission*/
+  video {
+    padding-top: 1em;
+  }
+}
+
+/*========Learn Page========*/
+
+/*First Section*/
+.learn-first-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-wrap: wrap;
+  padding-top: 2em;
+  padding-bottom: 10%;
+}
+
+.learn-first-section-learn {
+  font-size: 28px;
+}
+
+.learn-first-section-topic {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.learn-first-section img {
+  padding-top: 2em;
+  width: 60%;
+}
+
+/*Second Section*/
+.learn-second-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.learn-second-section-topic {
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 10%;
+}
+
+.learn-second-section img {
+  padding-top: 1em;
+  width: 70%;
+  padding-bottom: 1em;
+}
+
+.learn-second-section-content {
+  width: 70%;
+  text-align: left;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.whitespace {
+  padding-bottom: 10%;
+}
+
+@media screen and (max-width: 480px) {
+  /*First Section*/
+  .learn-first-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    margin: 0;
+  }
+
+  .learn-first-section-learn {
+    font-size: 14px;
+  }
+
+  .learn-first-section-topic {
+    font-size: 20px;
+  }
+
+  .learn-first-section img {
+    padding-top: 1em;
+    width: 90%;
+  }
+
+  /*Second Section*/
+  .learn-second-section-topic {
+    font-size: 14px;
+  }
+
+  .learn-second-section img {
+    width: 80%;
+  }
+
+  .learn-second-section-content {
+    width: 80%;
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /*First Section*/
+  .learn-first-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    margin: 0;
+  }
+
+  .learn-first-section-learn {
+    font-size: 18px;
+  }
+
+  .learn-first-section-topic {
+    font-size: 24px;
+  }
+
+  .learn-first-section img {
+    padding-top: 1em;
+    width: 90%;
+  }
+
+  /*Second Section*/
+
+  .learn-second-section-topic {
+    font-size: 17px;
+  }
+
+  .learn-second-section img {
+    width: 80%;
+  }
+
+  .learn-second-section-content {
+    width: 80%;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /*First Section*/
+
+  .learn-first-section-learn {
+    font-size: 18px;
+  }
+
+  .learn-first-section-topic {
+    font-size: 26px;
+  }
+
+  .learn-first-section img {
+    padding-top: 1em;
+    max-width: 70%;
+    max-height: 50%;
+    width: auto;
+  }
+
+  /*Second Section*/
+
+  .learn-second-section-topic {
+    font-size: 20px;
+  }
+
+  .learn-second-section img {
+    width: 80%;
+  }
+
+  .learn-second-section-content {
+    width: 80%;
+    font-size: 16px;
+  }
+}
+
+/*========Products Page========*/
+.products {
+  color: gray;
+  text-align: center;
+}
+
+/*App Section*/
+.app {
+  padding-top: 3em;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8%;
+}
+
+.app-screenshot {
+  max-width: 40%;
+  max-height: 80vh;
+  border-radius: 15px;
+  box-shadow: 0px 0px 8px #ededed;
+}
+
+.app-topic {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.app-features {
+  list-style-type: none;
+  padding-top: 1em;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  margin-right: 20px;
+}
+
+.app-features li {
+  margin-left: -5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.app-features img {
+  width: 22px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.app-features-send {
+  width: 70%;
+}
+
+.download-app {
+  display: flex;
+  flex-wrap: nowrap;
+  border: solid 3px #ededed;
+  border-radius: 15px;
+  align-items: center;
+  margin-left: 10%;
+  width: 80%;
+  padding-bottom: 1em;
+  margin-bottom: 15%;
+}
+
+.text {
+  padding-left: 15%;
+  width: 40%;
+}
+
+.get-the-app {
+  color: #226ee1;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.join {
+  color: grey;
+  font-size: 14px;
+}
+
+.download-icon {
+  margin-left: -10%;
+}
+
+.download-icon > a {
+  padding-left: 10%;
+}
+
+.download-icon > a > img {
+  border-radius: 10px;
+  width: 30%;
+}
+
+/*Card Section*/
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 10%;
+}
+
+.card-text {
+  color: #226ee1;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.coming-soon {
+  color: gray;
+  font-size: 24px;
+}
+
+.card > img {
+  max-width: 50%;
+  max-height: 80vh;
+  height: auto;
+  padding-left: 5%;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: baseline;
+  margin: 5%;
+  padding-bottom: 10em;
+}
+
+.benefit > ul {
+  text-align: center;
+  list-style-type: none;
+  padding-right: 25px;
+}
+
+.benefit h3 {
+  font-size: 30px;
+}
+
+.benefit p {
+  font-size: 18px;
+}
+
+.benefit img {
+  width: 75%;
+  height: auto;
+}
