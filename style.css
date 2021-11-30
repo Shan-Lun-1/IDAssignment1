@@ -667,6 +667,10 @@ video {
 }
 
 /*========Products Page========*/
+.products {
+  color: gray;
+  text-align: center;
+}
 
 /*App Section*/
 .app {
@@ -701,7 +705,7 @@ video {
 }
 
 .app-features li {
-  margin-left: -7%;
+  margin-left: -5%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -727,7 +731,7 @@ video {
   margin-left: 10%;
   width: 80%;
   padding-bottom: 1em;
-  margin-bottom: 20%;
+  margin-bottom: 15%;
 }
 
 .text {
@@ -742,7 +746,7 @@ video {
 }
 
 .join {
-  color: gray;
+  color: grey;
   font-size: 14px;
 }
 
@@ -760,6 +764,7 @@ video {
 }
 
 /*Card Section*/
+
 .card {
   display: flex;
   justify-content: space-between;
