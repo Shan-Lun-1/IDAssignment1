@@ -199,7 +199,7 @@ video {
   background-color: #f5f8ff;
   font-family: "Open Sans", sans-serif;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-bottom: 10%;
 }
 
@@ -224,6 +224,10 @@ video {
 /*Media queries*/
 
 @media only screen and (max-width: 480px) {
+  nav {
+    padding-bottom: 1em;
+  }
+
   /*Navigation Bar*/
   .coinbase {
     font-size: 18px;
@@ -424,7 +428,7 @@ video {
   .footer {
     flex-wrap: wrap;
     font-size: 10px;
-    justify-content: flex-start;
+    justify-content: space-around;
     padding-bottom: 15%;
   }
 
@@ -551,8 +555,24 @@ video {
   line-height: 2;
 }
 
-.whitespace {
-  padding-bottom: 10%;
+/*Button*/
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 20%;
+}
+
+.button-to-app {
+  background-color: #226ee1;
+  color: white;
+  border-color: #226ee1;
+  box-shadow: 3px 3px 10px #ededed;
+  font-size: 12px;
+  border-radius: 10px;
+  width: 20em;
+  padding: 10px;
 }
 
 @media screen and (max-width: 480px) {
@@ -590,6 +610,14 @@ video {
   .learn-second-section-content {
     width: 80%;
     font-size: 10px;
+  }
+
+  /*Button*/
+  .button-to-app {
+    font-size: 8px;
+    border-radius: 5px;
+    width: 18em;
+    padding: 5px;
   }
 }
 
@@ -668,7 +696,7 @@ video {
 
 /*========Products Page========*/
 .products {
-  color: gray;
+  color: grey;
   text-align: center;
 }
 
@@ -681,7 +709,7 @@ video {
   justify-content: center;
   justify-content: space-between;
   align-items: center;
-  margin: 8%;
+  margin: 10%;
 }
 
 .app-screenshot {
@@ -702,10 +730,10 @@ video {
   font-size: 24px;
   font-family: "Open Sans", sans-serif;
   margin-right: 20px;
+  padding-left: 0;
 }
 
 .app-features li {
-  margin-left: -5%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -728,10 +756,11 @@ video {
   border: solid 3px #ededed;
   border-radius: 15px;
   align-items: center;
-  margin-left: 10%;
-  width: 80%;
+  margin-left: 7.5%;
+  width: 85%;
   padding-bottom: 1em;
   margin-bottom: 15%;
+  line-height: 1.25;
 }
 
 .text {
@@ -750,12 +779,8 @@ video {
   font-size: 14px;
 }
 
-.download-icon {
-  margin-left: -10%;
-}
-
 .download-icon > a {
-  padding-left: 10%;
+  padding-left: 14px;
 }
 
 .download-icon > a > img {
@@ -818,4 +843,276 @@ video {
 .benefit img {
   width: 75%;
   height: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .products {
+    padding-top: 1em;
+    font-size: 12px;
+  }
+
+  /*App Section*/
+  .app {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .app-screenshot {
+    margin-top: 2em;
+    max-width: 80%;
+  }
+
+  .app-topic {
+    font-size: 20px;
+  }
+
+  .app-features {
+    font-size: 12px;
+  }
+
+  .app-features-send {
+    width: 100%;
+  }
+
+  .download-app {
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: solid 2px #ededed;
+    width: 80%;
+    justify-content: center;
+  }
+
+  .text {
+    padding-left: 5%;
+    width: 100%;
+  }
+
+  .get-the-app {
+    font-size: 24px;
+  }
+
+  .join {
+    font-size: 12px;
+  }
+
+  .download-icon > a {
+    padding-left: 12px;
+  }
+
+  .download-icon > a > img {
+    margin-top: 1em;
+    border-radius: 5px;
+    width: 25%;
+  }
+
+  /*Card Section*/
+
+  .card {
+    flex-direction: column-reverse;
+    margin: 0%;
+    text-align: center;
+    padding-bottom: 10%;
+  }
+
+  .card-text {
+    font-size: 24px;
+  }
+
+  .coming-soon {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .card > img {
+    max-width: 70%;
+    padding-left: 0;
+  }
+
+  .benefit {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .benefit > ul {
+    padding-right: 0px;
+  }
+
+  .benefit h3 {
+    font-size: 5vw;
+  }
+
+  .benefit p {
+    font-size: 12px;
+  }
+
+  .benefit img {
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .products {
+    font-size: 14px;
+  }
+
+  /*App Section*/
+  .app {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .app-screenshot {
+    margin-top: 2em;
+    max-width: 80%;
+  }
+
+  .app-topic {
+    font-size: 5vw;
+  }
+
+  .app-features {
+    font-size: 18px;
+  }
+
+  .app-features-send {
+    width: 100%;
+  }
+
+  .download-app {
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: solid 2px #ededed;
+    width: 80%;
+    justify-content: center;
+  }
+
+  .text {
+    padding-left: 5%;
+    width: 100%;
+  }
+
+  .get-the-app {
+    font-size: 24px;
+  }
+
+  .join {
+    font-size: 12px;
+  }
+
+  .download-icon > a {
+    padding-left: 12px;
+  }
+
+  .download-icon > a > img {
+    margin-top: 1em;
+    border-radius: 5px;
+    width: 25%;
+  }
+
+  /*Card Section*/
+
+  .card {
+    flex-direction: column-reverse;
+    margin: 0%;
+    text-align: center;
+    padding-bottom: 10%;
+  }
+
+  .card-text {
+    font-size: 30px;
+  }
+
+  .coming-soon {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .card > img {
+    max-width: 70%;
+    padding-left: 0;
+  }
+
+  .benefit {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .benefit > ul {
+    padding-right: 0px;
+  }
+
+  .benefit h3 {
+    font-size: 30px;
+  }
+
+  .benefit p {
+    font-size: 18px;
+  }
+
+  .benefit img {
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /*App Section*/
+
+  .app-screenshot {
+    max-width: 30%;
+  }
+
+  .app-topic {
+    font-size: 28px;
+  }
+
+  .app-features {
+    font-size: 18px;
+  }
+
+  .text {
+    padding-left: 15%;
+    width: 60%;
+  }
+
+  .get-the-app {
+    font-size: 24px;
+  }
+
+  .join {
+    font-size: 12px;
+  }
+
+  .download-icon > a {
+    padding-left: 36px;
+  }
+
+  .download-icon > a > img {
+    width: 30%;
+  }
+
+  /*Card Section*/
+
+  .card-text {
+    font-size: 28px;
+  }
+
+  .coming-soon {
+    font-size: 20px;
+  }
+
+  .card > img {
+    max-width: 40%;
+  }
+
+  .benefit h3 {
+    font-size: 20px;
+  }
+
+  .benefit p {
+    font-size: 12px;
+  }
 }
