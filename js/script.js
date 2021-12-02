@@ -1,4 +1,18 @@
+/*Navigation bar */
 
+function dropdownNav(){
+    var x = document.getElementById("dropdown");
+    var y = document.getElementById("products");
+    if (x.style.visibility == "hidden"){
+     x.style.visibility = "visible";
+     y.style.zIndex = '-1';
+    } else{
+      x.style.visibility = "hidden";
+      y.style.zIndex = '2';
+    }
+ }
+
+/*Welcome Text*/
 var i = 0;
 var welcome = ["Start Your Crypto Journey With Coinbase Today",
 "Buy, sell and exchange cryptocurrency easily and securely"];
@@ -26,6 +40,8 @@ function typeWelcome(){
     typeTitle();
     typeSub();
 }
+
+/*change color of link when hover */
 
 function color(x){
     x.style.color = "#226ee1";
