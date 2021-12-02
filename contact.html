@@ -19,8 +19,50 @@
         <a class = "pages" href = "contact.html">Contact Us</a>
         <a class = "pages" href = "products.html">Products</a>
         <a class = "pages" href = "learn.html">Learn</a>
-    </nav>
 
+        <button id= "menu" onclick = "dropdownNav()" >
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+          
+        <div id = "dropdown-container">
+          <div id = "dropdown">
+            <a class = "pages-dropdown" href = "contact.html">Contact Us</a>
+            <a class = "pages-dropdown" href = "products.html">Products</a>
+            <a class = "pages-dropdown" href = "learn.html">Learn</a>
+          </div>
+        </div>
+    </nav>
+    <hr>
+
+    <section class = "contact-form-container">
+        
+        <form class = "contact-form" action="index.html" method="POST"> <!-- To edit link -->
+            <p> Contact Us</p>
+
+            <label for="name">Name:</label><br>
+            <input type="text" placeholder = "Enter your name" id="name" name="name" required><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" placeholder = "Enter your email" id="email" name="email" required><br>
+            
+            <label for="area">Purpose of contact:</label><br>
+            <select id="area" placeholder="Area" name="area"required>
+              <option value="" disabled selected>--Please select an option--</option>
+              <option value="Cryptocurrencies">Cryptocurrencies</option>
+              <option value="Coinbase App">Coinbase App</option>
+              <option value="Coinbase Card">Coinbase Card</option>
+              <option value="Others">Others</option>
+            </select><br>
+
+            <label for="desc">Comments:</label><br>
+            <textarea id="desc" placeholder="Description" name="description"required></textarea><br>
+
+            <button>Look forward to your message </button>
+            
+        </form>
+    </section>
     <!--Footer-->
     <footer class = "footer">
         <ul>
