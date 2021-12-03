@@ -7,7 +7,7 @@ Coinbase is a company that allows users to buy, sell and trade cryptocurrency th
 As a user who came to this website might not know what coinbase is about, what cryptocurrency is. Therefore, in my design, I have decided to include pages, which would tell audience what coinbase is and the products it offer, and what are cryptocurrency. Some users might also have queries, so I have added a contact form on a page too.
 
 
-From Coinbase point of view, Coinbase would like to attract more users to downlaod and use their app, so that they can have more income. 
+From Coinbase point of view, Coinbase would like to attract more users to download and use their app, so that they can have more income. 
 
 <br>
 #### Wireframe
