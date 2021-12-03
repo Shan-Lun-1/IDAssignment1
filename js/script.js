@@ -8,7 +8,7 @@ function dropdownNav(){
      y.style.zIndex = '-1';
     } else{
       x.style.visibility = "hidden";
-      y.style.zIndex = '2';
+      x.style.zIndex = '2';
     }
  }
 
@@ -67,9 +67,11 @@ function optionOthers(option){
     }
 }
 
+
 /*Generate message with form data*/
 
 let submitform = document.getElementById('fsubmit');
+
 
 submitform.addEventListener("click", function(e){
     e.preventDefault();
@@ -105,15 +107,28 @@ submitform.addEventListener("click", function(e){
         document.getElementById('option-valid').innerHTML = ``;
         valid[2] = 'true';
     }
-
     
     let text = "";
-    text += `Hi ${name}, our team looks forward to reading your message regarding"${area}". We will get back to you as soon as possible to your email: ${email}. Have a great day ahead.` ;
-    if ((valid[0] == valid[1]) && (valid[1] == valid[2])){
+    text += `Hi ${name}, our team looks forward to reading your message regarding"${area}". We will get back to you as soon as possible through your email: ${email}. Have a great day ahead.` ;
+    if ((valid[0] == valid[1]) && (valid[1] == valid[2]) && (valid[2] == 'true')){
+      
         alert(text);
         name = document.getElementById('fname').value = '';
         email = document.getElementById('femail').value = '';
         area = document.getElementById('area').value = '';
+        other = document.getElementById('other').value = '';
+        desc = document.getElementById('desc').value = '';
+
+        submitform.style.backgroundColor = "green";
+        submitform.innerHTML = `Message Sent`;
     }
+
+
+
+
+
+    
+    
     
 });
+
