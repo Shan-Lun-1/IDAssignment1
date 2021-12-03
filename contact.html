@@ -38,30 +38,38 @@
 
     <section class = "contact-form-container">
         
-        <form class = "contact-form" action="index.html" method="POST"> <!-- To edit link -->
-            <p> Contact Us</p>
+        <form class = "contact-form" id = "forms" method="post"> <!-- To edit link -->
+            <h1> Contact Us</h1>
 
-            <label for="name">Name:</label><br>
-            <input type="text" placeholder = "Enter your name" id="name" name="name" required><br>
+            <label for="fname">Name:</label><br>
+            <input type="text" placeholder = "Enter your name" id="fname" name="fname" required>
+            <p id = "name-valid"></p><br>
             
-            <label for="email">Email:</label><br>
-            <input type="email" placeholder = "Enter your email" id="email" name="email" required><br>
+            <label for="femail">Email:</label><br>
+            <input type="email" placeholder = "Enter your email" id="femail" name="femail" required>
+            <p id = "email-valid"></p><br>
             
-            <label for="area">Purpose of contact:</label><br>
-            <select id="area" placeholder="Area" name="area"required>
+            <label for="area">What is your message about?</label><br>
+            <select id="area" name="area" required onchange ="optionOthers(this.value)">
               <option value="" disabled selected>--Please select an option--</option>
               <option value="Cryptocurrencies">Cryptocurrencies</option>
               <option value="Coinbase App">Coinbase App</option>
               <option value="Coinbase Card">Coinbase Card</option>
               <option value="Others">Others</option>
-            </select><br>
+            </select>
+            <p id = "option-valid"></p><br>
+            
+            <label id="other-tag" for="other" style="visibility:hidden;">Type of message (maximum characters: 250):</label><br>
+            <input type="text" id="other" name="other" style='display:none;'><br>
 
             <label for="desc">Comments:</label><br>
-            <textarea id="desc" placeholder="Description" name="description"required></textarea><br>
-
-            <button>Look forward to your message </button>
+            <textarea id="desc" placeholder="Description" name="description"></textarea><br>
+            
+            <button type = "submit" id = "fsubmit" name="fsubmit">Look forward to reading your message </button>
+            
             
         </form>
+    
     </section>
     <!--Footer-->
     <footer class = "footer">
