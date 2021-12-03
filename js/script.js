@@ -1,6 +1,6 @@
 /*Navigation bar */
-
-function dropdownNav(){
+/*To hide or show hamburger menu type of navigation bar*/
+function dropdownNav(){   
     var x = document.getElementById("dropdown");
     var y = document.getElementById("products");
     if (x.style.visibility == "hidden"){
@@ -13,7 +13,7 @@ function dropdownNav(){
  }
 
  /*========Home Page========*/
-/*Welcome Text*/
+/*Welcome Text Animation*/
 var i = 0;
 var welcome = ["Start Your Crypto Journey With Coinbase Today",
 "Buy, sell and exchange cryptocurrency easily and securely"];
@@ -23,7 +23,7 @@ function typeTitle() {
     
     ++i;
     if(i <= welcome[0].length){
-        setTimeout(typeWelcome, 30);
+        setTimeout(typeTitle, 30); 
         
     }
 }
@@ -42,7 +42,8 @@ function typeWelcome(){
     typeSub();
 }
 
-/*change color of link when hover */
+
+/*change color of link when hover under cryptocurrency section of index.html*/
 
 function color(x){
     x.style.color = "#226ee1";
@@ -53,7 +54,7 @@ function colorNormal(x){
 }
 
 /*========Contact Page========*/
-/*Text box will appear if user chose others*/
+/*Text box will appear if user chose 'others' in 'type of question'*/
 function optionOthers(option){
     var x = document.getElementById("other");
     var y =  document.getElementById("other-tag")
@@ -75,6 +76,8 @@ let submitform = document.getElementById('fsubmit');
 
 submitform.addEventListener("click", function(e){
     e.preventDefault();
+
+    /*To check if all required fields are filled with the correct type of data */
     const valid = ['false','false','false'];
     let name = document.getElementById('fname').value;
     let email = document.getElementById('femail').value;
@@ -108,27 +111,25 @@ submitform.addEventListener("click", function(e){
         valid[2] = 'true';
     }
     
+    /*Print message as alert when all required field are filled with the correct type of data */
     let text = "";
     text += `Hi ${name}, our team looks forward to reading your message regarding"${area}". We will get back to you as soon as possible through your email: ${email}. Have a great day ahead.` ;
     if ((valid[0] == valid[1]) && (valid[1] == valid[2]) && (valid[2] == 'true')){
       
         alert(text);
+
+        /*To clear form */
         name = document.getElementById('fname').value = '';
         email = document.getElementById('femail').value = '';
         area = document.getElementById('area').value = '';
         other = document.getElementById('other').value = '';
         desc = document.getElementById('desc').value = '';
 
+        /*Change submit button to 'Message Sent' with new background color */
         submitform.style.backgroundColor = "green";
         submitform.innerHTML = `Message Sent`;
     }
 
 
-
-
-
-    
-    
-    
 });
 
