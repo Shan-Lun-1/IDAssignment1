@@ -61,7 +61,7 @@ nav {
   border-radius: 2px;
 }
 
-/*index.html*/
+/*========Home Page========*/
 
 .topic {
   font-size: 3vw;
@@ -1209,12 +1209,16 @@ video {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
-.contact-form > p {
+.contact-form > h1 {
   text-align: center;
   font-size: 2em;
   font-weight: 500;
   margin-top: -0.5em;
   padding-bottom: 1em;
+}
+
+.contact-form > p {
+  color: red;
 }
 
 .contact-form > input,
@@ -1263,9 +1267,8 @@ button {
 }
 
 @media only screen and (max-width: 480px) {
-  .contact-form > p {
+  .contact-form > h1 {
     font-size: 1em;
-    margin-top: 0;
   }
 
   .contact-form > label {
