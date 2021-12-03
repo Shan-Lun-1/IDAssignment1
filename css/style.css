@@ -23,6 +23,7 @@ nav {
 }
 
 .coinbase {
+  /*The coinbase name on the left of nav bar*/
   color: #226ee1;
   font-size: 30px;
   font-weight: 600;
@@ -30,6 +31,7 @@ nav {
 }
 
 .pages {
+  /*For other pages/links on the nav bar*/
   font-size: 18px;
   font-weight: 400;
   float: right;
@@ -38,6 +40,7 @@ nav {
 }
 
 #dropdown {
+  /*For dropdown nav bar on mobile phone*/
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
@@ -48,6 +51,7 @@ nav {
 }
 
 #menu {
+  /*container for hamburger menu icon*/
   float: right;
   background-color: transparent;
   border: none;
@@ -55,17 +59,20 @@ nav {
 }
 
 #menu > svg {
+  /*hamburger menu icon*/
   padding-top: 5px;
   height: 15px;
   width: 20px;
 }
 #menu > svg > rect {
+  /*To fill every row of the hashm*/
   fill: #226ee1;
 }
 
 /*========Home Page========*/
 
 .topic {
+  /*For heading of every section*/
   font-size: 3vw;
   font-weight: 500;
   text-align: center;
@@ -74,6 +81,7 @@ nav {
 
 /*Welcome Section*/
 .marble {
+  /*to format welcome section*/
   background-image: url("../assets/home-page/marble-background.jpg");
   background-size: cover;
   display: flex;
@@ -86,6 +94,7 @@ nav {
 }
 
 #title {
+  /*For words "Start Your Crypto Journey With Coinbase Today"*/
   color: #226ee1;
   font-size: 3.5vw;
   font-weight: 500;
@@ -93,6 +102,7 @@ nav {
 }
 
 #sub {
+  /*For words "Buy, sell and exchange cryptocurrency easily and securely" */
   font-size: 2vw;
   padding-top: 1em;
 }
@@ -100,6 +110,7 @@ nav {
 /*Available Cryptocurrencies*/
 
 .flex-container {
+  /*Container to cointain all 6 sub-section of cryptocurrency*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -110,6 +121,7 @@ nav {
 }
 
 .flex-item {
+  /*Container for individual sub-section of cryptocurrency*/
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -122,32 +134,39 @@ nav {
 }
 
 .flex-item img {
+  /*Image of cryptocurrency*/
   padding-left: 10px;
   padding-right: 10px;
   width: 40%;
 }
 .flex-item p {
+  /*Content in every section*/
   font-size: 1.25vw;
   font-weight: 500;
   padding-right: 10px;
 }
 
 .abbreviation {
+  /*abbreviation of cryptocurrency*/
   color: grey;
 }
 
 .crypto {
+  /*Full name of cryptocurrency*/
   text-align: center;
   padding-bottom: 5em;
 }
 
 .crypto > a {
+  /*Link below available cryptocurrencies section to
+  redirect to products page for viewer to know more about the app*/
   font-size: 1.25vw;
 }
 
 /*About Coinbase*/
 /*For Coinbase icon and brief description*/
 .flex-container-row1 {
+  /*To contain logo and brief introduction of coinbase*/
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -157,11 +176,13 @@ nav {
 }
 
 .flex-container-row1 img {
+  /*Logo of coinbase*/
   padding-right: 10px;
   border-radius: 30px;
 }
 
 .flex-item-row1 {
+  /*to format brief introduction of coinbase*/
   border-radius: 28px;
   display: flex;
   align-items: center;
@@ -176,12 +197,14 @@ nav {
 }
 
 .flex-item-row1 p {
+  /*change padding for brief introduction*/
   padding-right: 20px;
   padding-left: 20px;
 }
 
 /*For remaining*/
 .flex-container-1 {
+  /*Remaining content of about coinbase*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -192,6 +215,7 @@ nav {
 }
 
 .flex-container-1 div {
+  /*Container for every sub section*/
   text-align: center;
   border-radius: 28px;
   background-color: white;
@@ -202,16 +226,19 @@ nav {
 }
 
 .data-info {
+  /*for data*/
   font-size: 14px;
 }
 
 .data {
+  /*for data's name*/
   font-size: 28px;
   font-weight: 500;
 }
 
 /*Our Mission*/
 video {
+  /*Video about coinabase*/
   margin-top: 3em;
   width: 100%;
   height: 100%;
@@ -219,6 +246,7 @@ video {
 
 /*Footer*/
 .footer {
+  /*to format footer*/
   padding-top: 5%;
   background-color: #f5f8ff;
   font-family: "Open Sans", sans-serif;
@@ -228,19 +256,23 @@ video {
 }
 
 .footer ul {
+  /*container of every sub-section of footer*/
   list-style-type: none;
 }
 
 .footer-sub {
+  /*title of every sub-section of footer*/
   font-weight: 600;
   padding-bottom: 5px;
 }
 
 .footer li {
+  /*to contain links*/
   padding-top: 10px;
 }
 
 .footer li > a > img {
+  /*to format image of the app store and google play*/
   border-radius: 5px;
   width: 50%;
 }
@@ -248,6 +280,7 @@ video {
 /*Media queries*/
 
 @media only screen and (max-width: 480px) {
+  /*Media queries for phone version of index.html*/
   /*Navigation Bar*/
 
   .coinbase {
@@ -263,11 +296,11 @@ video {
     flex-direction: row;
     align-items: center;
     padding-top: 1.5em;
-    padding-bottom: 1em;
+    padding-bottom: 5em;
   }
 
-  #menu {
-    margin-top: -3px;
+  #menu > svg {
+    margin-top: -18px;
     position: absolute;
     right: 0;
     margin-right: 10px;
@@ -301,10 +334,10 @@ video {
 
   /*Welcome Section*/
   .marble {
-    margin-top: 0.5em;
+    margin-top: -2em;
   }
 
-  /*Available Cryptocurrencies*/
+  /*Available Cryptocurrencies*/ /*To change from 3 columns to 2 columns*/
   .flex-item {
     border-radius: 15px;
     padding: 5px;
@@ -342,7 +375,7 @@ video {
     padding: 35px 10px;
   }
 
-  /*For remaining*/
+  /*For remaining*/ /*To change from all items in 1 row to 1 or 2 items per row*/
   .flex-container-1 {
     display: flex;
     flex-direction: row;
@@ -381,6 +414,7 @@ video {
 
   /*Footer*/
   .footer {
+    /*To allow multiple rows instead of 1 to contain all sub-section of footer*/
     flex-wrap: wrap;
     font-size: 8px;
     justify-content: space-between;
@@ -394,6 +428,7 @@ video {
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  /*For larger phones and tablets*/
   /*Navigation Bar*/
   .coinbase {
     font-size: 18px;
@@ -411,6 +446,7 @@ video {
 
   /*Available Cryptocurrencies*/
   .flex-item {
+    /*To change from 3 columns to 2 columns*/
     border-radius: 15px;
     padding: 10px;
     flex: 1 1 40%;
@@ -449,7 +485,7 @@ video {
     padding-left: 10px;
   }
 
-  /*For remaining*/
+  /*For remaining*/ /*To change from all items in 1 row into 2 rows*/
   .flex-container-1 {
     display: flex;
     flex-direction: row;
@@ -487,6 +523,7 @@ video {
 
   /*Footer*/
   .footer {
+    /*To allow multiple rows instead of 1 to contain all sub-section of footer*/
     flex-wrap: wrap;
     font-size: 10px;
     justify-content: space-between;
@@ -500,6 +537,7 @@ video {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  /*For larger tablets and laptops*/
   /*Navigation Bar*/
 
   .coinbase {
@@ -566,6 +604,7 @@ video {
 
 /*First Section*/
 .learn-first-section {
+  /*To contain the title of the page and image in 2 columns*/
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -577,21 +616,25 @@ video {
 }
 
 .learn-first-section-learn {
+  /*Part of the title*/
   font-size: 28px;
 }
 
 .learn-first-section-topic {
+  /*Another part of the title*/
   font-size: 36px;
   font-weight: 500;
 }
 
 .learn-first-section img {
+  /*Image in the first section*/
   padding-top: 2em;
   width: 60%;
 }
 
 /*Second Section*/
 .learn-second-section {
+  /*For the main content on the page, formatted in 1 column*/
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -599,12 +642,14 @@ video {
 }
 
 .learn-second-section-topic {
+  /*Topic of every section*/
   font-size: 30px;
   font-weight: 500;
   padding-top: 10%;
 }
 
 .learn-second-section img {
+  /*Image of the section*/
   padding-top: 1em;
   width: 70%;
   max-height: 65vh;
@@ -612,6 +657,7 @@ video {
 }
 
 .learn-second-section-content {
+  /*Content of the section*/
   width: 70%;
   text-align: left;
   font-size: 20px;
@@ -620,6 +666,7 @@ video {
 
 /*Button*/
 .button-container {
+  /*Container of buttons to redirect to either app store or google play to downlaod app*/
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -628,6 +675,7 @@ video {
 }
 
 .button-to-app {
+  /*Button to redirect to either app store or google play to downlaod app*/
   background-color: #226ee1;
   color: white;
   border-color: #226ee1;
@@ -639,8 +687,10 @@ video {
 }
 
 @media screen and (max-width: 480px) {
+  /*Media queries for phone version of learn.html*/
   /*First Section*/
   .learn-first-section {
+    /*To convert from 2 column to 1 column*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -685,8 +735,10 @@ video {
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  /*For larger phones and tablets*/
   /*First Section*/
   .learn-first-section {
+    /*To convert from 2 columns into 1 column*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -724,6 +776,7 @@ video {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  /*For larger tablets and laptops*/
   /*First Section*/
 
   .learn-first-section-learn {
@@ -759,12 +812,16 @@ video {
 
 /*========Products Page========*/
 .products {
+  /*link below nav bar for user to go to either app or card section directly without scrolling*/
   color: grey;
   text-align: center;
 }
 
 /*App Section*/
+
+/*First section of app section*/
 .app {
+  /*To create two columns*/
   padding-top: 3em;
   display: flex;
   flex-wrap: nowrap;
@@ -783,11 +840,13 @@ video {
 }
 
 .app-topic {
+  /*Trade your cryptocurrencies securely and easily*/
   font-size: 32px;
   font-weight: 500;
 }
 
 .app-features {
+  /*list of features of app*/
   list-style-type: none;
   padding-top: 1em;
   font-size: 24px;
@@ -804,16 +863,19 @@ video {
 }
 
 .app-features img {
+  /*format 'tick' photo*/
   width: 22px;
   height: 20px;
   margin-right: 20px;
 }
 
 .app-features-send {
+  /*width for 'Send and recieve' feature of the app*/
   width: 70%;
 }
 
 .download-app {
+  /*format container to promote the app for users*/
   display: flex;
   flex-wrap: nowrap;
   border: solid 3px #ededed;
@@ -827,26 +889,31 @@ video {
 }
 
 .text {
+  /*cointainer for text in 'download app' section*/
   padding-left: 15%;
   width: 40%;
 }
 
 .get-the-app {
+  /*Get the App Now*/
   color: #226ee1;
   font-size: 30px;
   font-weight: 500;
 }
 
 .join {
+  /*Join more than 70 million users*/
   color: grey;
   font-size: 14px;
 }
 
 .download-icon > a {
+  /*format links for app store and google play*/
   padding-left: 14px;
 }
 
 .download-icon > a > img {
+  /*image of app store and google play*/
   border-radius: 10px;
   width: 30%;
 }
@@ -854,6 +921,7 @@ video {
 /*Card Section*/
 
 .card {
+  /*Create 2 columns for taglines and image of card*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -862,17 +930,20 @@ video {
 }
 
 .card-text {
+  /*part of tagline*/
   color: #226ee1;
   font-size: 40px;
   font-weight: 500;
 }
 
 .coming-soon {
+  /*part of tagline*/
   color: gray;
   font-size: 24px;
 }
 
 .card > img {
+  /*image of card*/
   max-width: 50%;
   max-height: 80vh;
   height: auto;
@@ -880,6 +951,7 @@ video {
 }
 
 .benefit {
+  /*Container for the 3 benefits of using the card*/
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -890,26 +962,32 @@ video {
 }
 
 .benefit > ul {
+  /*container for respective benefits*/
   text-align: center;
   list-style-type: none;
   padding-right: 25px;
 }
 
 .benefit h3 {
+  /*heading for every topic*/
   font-size: 30px;
 }
 
 .benefit p {
+  /*content for every topic*/
   font-size: 18px;
 }
 
 .benefit img {
+  /*a relevant photo for every topic*/
   width: 75%;
   height: auto;
 }
 
 @media screen and (max-width: 480px) {
+  /*Media queries for phone version of products.html*/
   .products {
+    /*to be use with javascript, so that it would not have conflicts with dropdown menu*/
     position: relative;
     padding-top: 2em;
     font-size: 12px;
@@ -918,6 +996,7 @@ video {
 
   /*App Section*/
   .app {
+    /*Convert to 1 column from 2 column*/
     flex-wrap: wrap;
     flex-direction: column;
   }
@@ -940,6 +1019,7 @@ video {
   }
 
   .download-app {
+    /*Convert from 1 row to multiple rows*/
     flex-wrap: wrap;
     flex-direction: column;
     border: solid 2px #ededed;
@@ -973,6 +1053,7 @@ video {
   /*Card Section*/
 
   .card {
+    /*Convert to 1 column from 2 columns*/
     flex-direction: column-reverse;
     margin: 0%;
     text-align: center;
@@ -994,6 +1075,7 @@ video {
   }
 
   .benefit {
+    /*Convert to 1 column from 3 columns*/
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
@@ -1018,12 +1100,14 @@ video {
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  /*For larger phones and tablets*/
   .products {
     font-size: 14px;
   }
 
   /*App Section*/
   .app {
+    /*Convert to 1 column from 2 column*/
     flex-wrap: wrap;
     flex-direction: column;
   }
@@ -1046,6 +1130,7 @@ video {
   }
 
   .download-app {
+    /*Convert from 1 row to multiple rows*/
     flex-wrap: wrap;
     flex-direction: column;
     border: solid 2px #ededed;
@@ -1079,6 +1164,7 @@ video {
   /*Card Section*/
 
   .card {
+    /*Convert to 1 column from 2 columns*/
     flex-direction: column-reverse;
     margin: 0%;
     text-align: center;
@@ -1100,6 +1186,7 @@ video {
   }
 
   .benefit {
+    /*Convert to 1 column from 3 columns*/
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
@@ -1124,6 +1211,7 @@ video {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  /*For larger tablets and laptops*/
   /*App Section*/
 
   .app-screenshot {
@@ -1185,6 +1273,7 @@ video {
 /*========Contact Page========*/
 
 .contact-form-container {
+  /*Container for form*/
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1194,18 +1283,20 @@ video {
 }
 
 .contact-form {
+  /*to format form*/
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #eeeeee;
+  background-color: #fafafa;
   height: 70%;
   width: 70%;
   padding: 5%;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 25px;
 }
 
 .contact-form > h1 {
+  /*format heading of form*/
   text-align: center;
   font-size: 2em;
   font-weight: 500;
@@ -1214,10 +1305,11 @@ video {
 }
 
 .contact-form > p {
+  /*for format of error prompt*/
   color: red;
 }
 
-.contact-form > input,
+.contact-form > input, /*for format of input boxes*/
 select,
 textarea {
   outline: none;
@@ -1230,8 +1322,11 @@ textarea {
 }
 
 .contact-form > textarea {
+  /*padding for label for textarea*/
   padding-top: 10px;
 }
+
+/*border color when input boxes are in focus*/
 
 .contact-form > input:focus {
   border: 1px solid #226ee1;
@@ -1244,26 +1339,32 @@ textarea {
 .contact-form > textarea:focus {
   border: 1px solid #226ee1;
 }
+
 #area > option {
+  /*make width of option be the same as other input boxes*/
   width: inherit;
 }
 
 textarea {
+  /*format for text area*/
   height: 10vh;
   resize: none;
 }
 
 button {
-  width: 50%;
+  /*button to 'submit' form*/
+  width: 100%;
   background-color: #226ee1;
   color: white;
   border-radius: 5px;
   padding: 10px;
   margin-top: 1em;
   border: none;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 480px) {
+  /*Media queries for phone version of contact.html*/
   .contact-form > h1 {
     font-size: 1em;
   }

@@ -20,7 +20,7 @@
         <a class = "pages" href = "products.html">Products</a>
         <a class = "pages" href = "learn.html">Learn</a>
 
-        <button id= "menu" onclick = "dropdownNav()" >
+        <button id= "menu" onclick = "dropdownNav()" >  <!-- Hamburger menu icon  -->
             <svg>
                 <rect rx = 1px ry = 1px width = 20px height = 3px></rect>
                 <rect y = 6px rx = 1px ry = 1px width = 20px height = 3px></rect>
@@ -28,7 +28,7 @@
             </svg>
         </button>
 
-        <div id = "dropdown-container">
+        <div id = "dropdown-container">  <!-- Dropdown section -->
           <div id = "dropdown">
             <a class = "pages-dropdown" href = "contact.html">Contact Us</a>
             <a class = "pages-dropdown" href = "products.html">Products</a>
@@ -38,42 +38,47 @@
     </nav>
     <hr>
 
-    <section class = "contact-form-container">
+    <main>
+        <section class = "contact-form-container">
+            
+            <form class = "contact-form" id = "forms" method="post"> 
+                <h1> Contact Us</h1>
+                
+                <!--Name-->
+                <label for="fname">Name:</label><br>
+                <input type="text" placeholder = "Enter your name" id="fname" name="fname" required>
+                <p id = "name-valid"></p><br>
+                
+                <!--Email-->
+                <label for="femail">Email:</label><br>
+                <input type="email" placeholder = "Enter your email" id="femail" name="femail" required>
+                <p id = "email-valid"></p><br>
+                
+                <!--Type of question-->
+                <label for="area">What is your message about?</label><br>
+                <select id="area" name="area" required onchange ="optionOthers(this.value)">
+                <option value="" disabled selected>--Please select an option--</option>
+                <option value="Cryptocurrencies">Cryptocurrencies</option>
+                <option value="Coinbase App">Coinbase App</option>
+                <option value="Coinbase Card">Coinbase Card</option>
+                <option value="Others">Others</option>
+                </select>
+                <p id = "option-valid"></p><br>
+                <!--Will be hidden unless 'others' is chosen-->
+                <label id="other-tag" for="other" style="visibility:hidden;">Type of message (maximum characters: 250):</label><br>
+                <input type="text" id="other" name="other" style='display:none;'><br>
+                
+                <!--Comments-->
+                <label for="desc">Comments:</label><br>
+                <textarea id="desc" placeholder="Description" name="description"></textarea><br>
+                
+                <!--Button-->
+                <button type = "submit" id = "fsubmit" name="fsubmit">Look forward to reading your message </button>
+            
+            </form>
         
-        <form class = "contact-form" id = "forms" method="post"> <!-- To edit link -->
-            <h1> Contact Us</h1>
-
-            <label for="fname">Name:</label><br>
-            <input type="text" placeholder = "Enter your name" id="fname" name="fname" required>
-            <p id = "name-valid"></p><br>
-            
-            <label for="femail">Email:</label><br>
-            <input type="email" placeholder = "Enter your email" id="femail" name="femail" required>
-            <p id = "email-valid"></p><br>
-            
-            <label for="area">What is your message about?</label><br>
-            <select id="area" name="area" required onchange ="optionOthers(this.value)">
-              <option value="" disabled selected>--Please select an option--</option>
-              <option value="Cryptocurrencies">Cryptocurrencies</option>
-              <option value="Coinbase App">Coinbase App</option>
-              <option value="Coinbase Card">Coinbase Card</option>
-              <option value="Others">Others</option>
-            </select>
-            <p id = "option-valid"></p><br>
-            
-            <label id="other-tag" for="other" style="visibility:hidden;">Type of message (maximum characters: 250):</label><br>
-            <input type="text" id="other" name="other" style='display:none;'><br>
-
-            <label for="desc">Comments:</label><br>
-            <textarea id="desc" placeholder="Description" name="description"></textarea><br>
-            
-            <button type = "submit" id = "fsubmit" name="fsubmit">Look forward to reading your message </button>
-        
-            
-            
-        </form>
-    
-    </section>
+        </section>
+    </main> 
     <!--Footer-->
     <footer class = "footer">
         <ul>
@@ -85,8 +90,8 @@
 
         <ul>
             <li class = "footer-sub">Products</li>
-            <li><a href = "products.html#app">App</a></li> <!--Add Link-->
-            <li><a href = "products.html#card">Card</a></li> <!--Add Link-->
+            <li><a href = "products.html#app">App</a></li> 
+            <li><a href = "products.html#card">Card</a></li> 
         </ul>
 
         <ul>

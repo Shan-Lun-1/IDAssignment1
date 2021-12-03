@@ -13,14 +13,14 @@
 </head>
 
 <body onload = "typeWelcome()">
-    <nav>
+    <nav> <!-- Navigation bar (Nav bar) -->
         <a class = "coinbase" href = "index.html">Coinbase</a>
         
         <a class = "pages" href = "contact.html">Contact Us</a>
         <a class = "pages" href = "products.html">Products</a>
         <a class = "pages" href = "learn.html">Learn</a>
 
-        <button id= "menu" onclick = "dropdownNav()" >
+        <button id= "menu" onclick = "dropdownNav()" >  <!-- Hamburger menu icon  -->
             <svg>
                 <rect rx = 1px ry = 1px width = 20px height = 3px></rect>
                 <rect y = 6px rx = 1px ry = 1px width = 20px height = 3px></rect>
@@ -28,7 +28,7 @@
             </svg>
         </button>
           
-        <div id = "dropdown-container">
+        <div id = "dropdown-container"> <!-- Dropdown section -->
           <div id = "dropdown">
             <a class = "pages-dropdown" href = "contact.html">Contact Us</a>
             <a class = "pages-dropdown" href = "products.html">Products</a>
@@ -49,7 +49,7 @@
         <section class = "crypto">
             <h2 class = "topic">Available Cryptocurrencies</h2>
 
-            <section class = "flex-container">
+            <section class = "flex-container"> <!-- Contain 6 examples of cryptocurrencies  -->
                 <div class="flex-item">
                     <img src = "assets/home-page/crypto/bitcoin.png" alt = "Bitcoin">
                     <p>Bitcoin</p>  
@@ -88,6 +88,7 @@
 
             </section>    
             <a href = "products.html#app" onmouseover="color(this)" onmouseout="colorNormal(this)">Download the app to trade with more than 100 cryptocurrencies </a> 
+            <!-- Link to app page for users to learn more about the app -->
         </section>
 
         <!--About Coinbase-->
@@ -105,7 +106,7 @@
                 </p>
                 
             </section>
-            <section class = "flex-container-1">
+            <section class = "flex-container-1"> <!-- Contain 4 relevant data about coinbase -->
                 <div>
                     <p class = "data">70+ Million</p>
                     <p class = "data-info"> Users </p>
@@ -130,7 +131,7 @@
         </section>
 
         <!--Our Mission-->
-        <section>
+        <section> <!-- Video to introduce coinbase -->
             <h2 class = "topic">Our Mission</h2>
             <video autoplay loop muted id = "mission">
                 <source src = "assets/home-page/our-mission.mp4" type = "video/mp4">
@@ -149,8 +150,8 @@
 
         <ul>
             <li class = "footer-sub">Products</li>
-            <li><a href = "products.html#app">App</a></li> <!--Add Link-->
-            <li><a href = "products.html#card">Card</a></li> <!--Add Link-->
+            <li><a href = "products.html#app">App</a></li> 
+            <li><a href = "products.html#card">Card</a></li> 
         </ul>
 
         <ul>
