@@ -19,6 +19,7 @@ body {
 nav {
   font-family: "Open Sans", sans-serif;
   padding-top: 3em;
+  margin-bottom: -4em;
 }
 
 .coinbase {
@@ -1253,6 +1254,7 @@ textarea {
 }
 
 button {
+  width: 50%;
   background-color: #226ee1;
   color: white;
   border-radius: 5px;
