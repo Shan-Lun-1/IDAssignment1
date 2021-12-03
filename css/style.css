@@ -53,12 +53,13 @@ nav {
   visibility: hidden;
 }
 
-#menu > div {
-  width: 30px;
-  height: 5px;
-  background-color: #226ee1;
-  margin: 5px;
-  border-radius: 2px;
+#menu > svg {
+  padding-top: 5px;
+  height: 15px;
+  width: 20px;
+}
+#menu > svg > rect {
+  fill: #226ee1;
 }
 
 /*========Home Page========*/
@@ -72,7 +73,7 @@ nav {
 
 /*Welcome Section*/
 .marble {
-  background-image: url("../assets/home page/marble background.jpg");
+  background-image: url("../assets/home-page/marble-background.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -262,12 +263,6 @@ video {
     align-items: center;
     padding-top: 1.5em;
     padding-bottom: 1em;
-  }
-
-  #menu > div {
-    width: 18px;
-    height: 3px;
-    margin: 3px;
   }
 
   #menu {
